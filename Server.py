@@ -81,13 +81,13 @@ def handle_client(sock, client_address, client_port):
             ipv4_prefixes.append(prefix["ipv4Prefix"])
 
     # Microsoft Open IP List
-    with open('msft-public-ips.csv', newline='') as csvfile:
+    with open('./Resources/msft-public-ips.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             ipv4_prefixes.append(row['Prefix'])
 
     # GitHub Open IP List
-    with open('github.txt', 'r') as f:
+    with open('./Resources/github.txt', 'r') as f:
         data = json.load(f)
     for key in data:
         if isinstance(data[key], list):
@@ -109,7 +109,7 @@ def handle_client(sock, client_address, client_port):
         ipv4_prefixes += data.split('\n')
 
     # Facebook Open IP List
-    with open('facebook.txt', 'r') as f:
+    with open('./Resources/facebook.txt', 'r') as f:
         for line in f:
             # 删除行末尾的换行符
             line = line.strip()
