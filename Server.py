@@ -66,6 +66,7 @@ def handle_client(sock, client_address, client_port):
     # 接收客户端的数据包
     data = b''
 
+    # 由于采用非阻塞Socket，所以需要循环接收数据
     recv_data = sock.recv(HEADER_TOTAL)
     data += recv_data
     hex_SequenceNumber = data[HEADER_TYPE + HEADER_LENGTH:HEADER_TOTAL]
@@ -155,13 +156,16 @@ def handle_client(sock, client_address, client_port):
 
         print("[*] Request type = VeriDNS Request")
         data = b''
+        #非阻塞Socket，所以需要循环接收数据
         recv_data = sock.recv(REQBODY_DOMAINNAME + BODY_NUMOFADDR)
         data += recv_data
+
         hex_DomainName = data[:REQBODY_DOMAINNAME]
         hex_NumberOfAddr = data[REQBODY_DOMAINNAME:REQBODY_DOMAINNAME + BODY_NUMOFADDR]
         dec_NumberOfAddr = int.from_bytes(hex_NumberOfAddr, byteorder='big')
 
         data = b''
+        #非阻塞Socket，所以需要循环接收数据
         recv_data = sock.recv(LENGTH_IPV4 * dec_NumberOfAddr)
         data += recv_data
         hex_IPAddress = data[:LENGTH_IPV4 * dec_NumberOfAddr]
