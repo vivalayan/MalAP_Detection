@@ -375,7 +375,7 @@ def start_server(port=DEFAULT_PORT):
 
     context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
 
-    context.load_cert_chain('server_cert.crt', 'server_key.key')
+    context.load_cert_chain('./SSL_Certs/server_cert.crt', './SSL_Certs/server_key.key')
 
     # start
     sock.listen(10000)
