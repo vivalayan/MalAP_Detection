@@ -303,7 +303,7 @@ def handle_client(sock, client_address, client_port):
 
             # dus DNS-System Distributed System
             # data_dus = []
-            # regionCodeList = [
+            # regionCodeList = [[
             #                   # "de-dus", "de-fra",
             #                   # "nl-ams", "nl-ams2",
             #                   "uk-lon",  # "ee-tll",
