@@ -69,6 +69,5 @@ This is a tool for end users to detect malicious access point on their own machi
 
 ## 4 Functions
 
-### 4.1 ARP Spoofing Detection
-
-### 4.2 DNS Spoofing Detection
+### DNS spoofing detection
+### ARP spoofing detection [here](https://github.com/Melodys-Code-Warehouse/MalAP-Detective/tree/arp-spoofing)
