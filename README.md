@@ -4,7 +4,8 @@
 This is a tool used for detecting malicious access point. From our perspective, we assume that the malicious AP do DNS spoofing attack and ARP spoofing attack. As for DNS spoofing attack, we proposed a polymerized method using public DNS verification APIs by our distributed servers on TLS, to reach the standard of CIA(Confidentiality, Integrity and Accessibility). This is a proxy-like method.
 
 ## System Overview
-<img width="240" alt="image" src="https://github.com/vivalayan/MalAP_Detection/assets/90449797/1c7b27ef-93af-4a76-80f9-6785a67a7061">
+![NUSSWS drawio](https://github.com/vivalayan/MalAP_Detection/assets/90449797/ecf06e92-012a-47dd-9380-85df1939bfd2)
+
 
 ## 1 Collaborators 
 
