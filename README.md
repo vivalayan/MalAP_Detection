@@ -1,6 +1,7 @@
 # Malicious Access Point Detective (MalAP Detective)
 
 **Note: The `main` branch only contains this `README.md`. Please find the corresponding source code under other branches.**
+This is a tool used for detecting malicious access point. From our perspective, we assume that the malicious AP do DNS spoofing attack and ARP spoofing attack. As for DNS spoofing attack, we proposed a polymerized method using public DNS verification APIs by our distributed servers on TLS, to reach the standard of CIA(Confidentiality, Integrity and Accessibility). This is a proxy-like method.
 
 ## 1 Collaborators 
 
@@ -14,11 +15,11 @@ Sort in the alphabetic order:
 
 ## 2 Deployment
 
-Our DNS spoofing detector adopts the server-client model. In order to make it work on your own machine, please follow the instructions here.
+Our DNS spoofing detector adopts the server-client model. In order to make it work on your own machine, please follow the instructions here. As the server is polymerized, we only need to deploy server.py since it contains both root server and branch server implementations.
 
 ### 2.1 Deploy the Root Server
 
-1. Go to the `dns-spoofing-server` branch. Clone the whole branch from the repository.
+1. Go to the `Server` branch. Clone the whole branch from the repository.
 2. Follow the instructions in README.txt to set up the runtime environment.
 3. Launch the server with the command `python3 Server.py`
 
@@ -26,7 +27,7 @@ Our DNS spoofing detector adopts the server-client model. In order to make it wo
 
 The root server and branch server are integrated into one program so the deployment steps are the same.
 
-1. Go to the `dns-spoofing-server` branch. Clone the whole branch from the repository.
+1. Go to the `Server` branch. Clone the whole branch from the repository.
 2. Follow the instructions in README.txt to set up the runtime environment.
 3. Launch the server with the command `python3 Server.py`
 
