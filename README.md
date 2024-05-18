@@ -7,17 +7,14 @@ This is a tool used for detecting malicious access point. From our perspective, 
 ![NUSSWS drawio](https://github.com/vivalayan/MalAP_Detection/assets/90449797/ecf06e92-012a-47dd-9380-85df1939bfd2)
 
 
-## 1 Collaborators 
-
-Sort in the alphabetic order:
-
+## 1.Team members
+- @vivalayan
+- @melody0123
 - @ChaoHanley
 - @SuiseiKawaii
 - @YuanHansen2233
-- @melody0123
-- @vivalayan
 
-## 2 Deployment
+## 2.Deployment
 
 Our DNS spoofing detector adopts the server-client model. In order to make it work on your own machine, please follow the instructions here. As the server is polymerized, we only need to deploy server.py since it contains both root server and branch server implementations.
 
@@ -75,4 +72,6 @@ This is a tool for end users to detect malicious access point on their own machi
 ## 4 Functions
 
 ### DNS spoofing detection
-### ARP spoofing detection [here](https://github.com/Melodys-Code-Warehouse/MalAP-Detective/tree/arp-spoofing)
+Sniffing DNS queries on host machine, then send those queries to our VeriDNS server. After verification, host can see the results on console.
+### ARP spoofing detection 
+[Click here](https://github.com/Melodys-Code-Warehouse/MalAP-Detective/tree/arp-spoofing)
