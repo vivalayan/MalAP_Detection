@@ -6,6 +6,9 @@ This is a tool used for detecting malicious access point. From our perspective, 
 
 ## System Overview
 ![NUSSWS drawio](https://github.com/vivalayan/MalAP_Detection/assets/90449797/ecf06e92-012a-47dd-9380-85df1939bfd2)
+## Prize
+![SWS3011_Second Prize](https://github.com/vivalayan/MalAP_Detection/assets/90449797/a6a52592-a806-4773-baa9-c7e91846c9b3)
+
 
 
 ## 1.Team members
